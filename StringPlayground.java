@@ -1,4 +1,4 @@
-package programs;
+package programs.programs;
 
 public class StringPlayground {
 
