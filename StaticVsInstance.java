@@ -1,6 +1,6 @@
 package programs.programs;
 
-class Demo {
+public class StaticVsInstance {
 
 	int x = 10; // instance variable
 	static int y = 20; // static variable
@@ -23,7 +23,7 @@ class Demo {
 
 	public static void main(String[] args) {
 
-		Demo d = new Demo();
+		StaticVsInstance d = new StaticVsInstance();
 		int a = 10;
 
 		d.instanceMethod(a);
@@ -32,5 +32,7 @@ class Demo {
 		System.out.println(a); // 10 ❌ unchanged
 		System.out.println(d.x); // 100 ✅ changed
 		System.out.println(y); // 400 ✅ changed
+		
+		String s ="prasan";
 	}
 }
