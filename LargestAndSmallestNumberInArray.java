@@ -1,5 +1,4 @@
 package programs.programs;
-
 import java.util.Scanner;
 
 public class LargestAndSmallestNumberInArray {
@@ -12,10 +11,12 @@ public class LargestAndSmallestNumberInArray {
         int size = sc.nextInt();
         System.out.println();
         int[] numbers = new int[size];
+        
         // Fill array with random numbers (1–100)
         for (int i = 0; i < size; i++) {
             numbers[i] = (int) (Math.random() * 100) + 1;
         }
+        
         // Print array without trailing comma
         System.out.print("Array elements: ");
         for (int i = 0; i < numbers.length; i++) {
@@ -29,6 +30,7 @@ public class LargestAndSmallestNumberInArray {
         System.out.println();
         System.out.println("Largest number: " + findLargest(numbers));
         System.out.println("Smallest number: " + findSmallest(numbers));
+        
         sc.close();
     }
     static int findLargest(int[] arr) {
