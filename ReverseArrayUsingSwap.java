@@ -14,16 +14,22 @@ public class ReverseArrayUsingSwap {
 
         int start = 0;
         int end = arr.length - 1;
-
-        while (start < end) {
-
-            // swap
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-
-            start++;
-            end--;
+//
+//        while (start < end) {
+//
+//            // swap
+//            int temp = arr[start];
+//            arr[start] = arr[end];
+//            arr[end] = temp;
+//
+//            start++;
+//            end--;
+//        }
+        
+        for(int i =0, j = arr.length -1; i < arr.length/2;i++,j--) {
+        	int temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
         }
 
         System.out.println("After Reverse: " + Arrays.toString(arr));
