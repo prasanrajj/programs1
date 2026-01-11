@@ -13,7 +13,7 @@ public class SubStrings {
 				}
 				System.out.println();
 			}
-			System.out.println("----------------------------");
+			System.out.println("------")
 		}
 				
 	}
