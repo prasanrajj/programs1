@@ -1,6 +1,6 @@
 package programs.programs.DSA.algorithms;
 
-public class PrefixSum {
+public class PrefixSumAccumulation {
 
     public static void main(String[] args) {
 
@@ -8,10 +8,20 @@ public class PrefixSum {
 
         int[] prefix = new int[arr.length];
         prefix[0] = arr[0];
-
+        
+        
+        //single shot without using a variable
         for (int i = 1; i < arr.length; i++) {
             prefix[i] = prefix[i - 1] + arr[i];
         }
+        
+        //using another sum variable
+//        int sum = 0;
+//        for (int i = 0; i < arr.length; i++) {
+//            sum += arr[i];
+//            prefix[i] = sum;
+//        }
+
 
         // example query: sum from L to R
         int L = 1;
