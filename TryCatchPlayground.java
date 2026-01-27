@@ -62,7 +62,7 @@ public class TryCatchPlayground {
      }
 
      // Multi-catch demo
-     try {
+     try { 
          System.out.println("Enter a number for multi-catch demo:");
          int n = sc.nextInt();
          int r = 10 / n;
@@ -73,7 +73,7 @@ public class TryCatchPlayground {
      }
 
      System.out.println("Program ended normally");
-     sc.close();
+//     sc.close();
  }
 }
 
