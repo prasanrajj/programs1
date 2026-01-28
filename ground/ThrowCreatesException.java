@@ -5,7 +5,7 @@ public class ThrowCreatesException {
     public static void main(String[] args) {
 
         try {
-            int age = 20;
+            int age = 16;
 
             if (age < 18) {
                 throw new IllegalArgumentException("Age below 18");
